@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Opis vaše stranice">
+    <meta name="keywords" content="ključne riječi, oznake, HTML5">
+    <meta name="author" content="Ime Prezime">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Nikola Tesla</title>
+
+    <link rel="stylesheet" href="stil.css">
+    <style>
+	 /* Ostali stilovi ostaju nepromijenjeni */
+        .galerija {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .galerija figure {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .galerija img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .galerija figcaption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #666;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        main {
+            padding: 2em;
+			margin-bottom: 100px
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #500;
+        }
+
+        article {
+            margin-bottom: 100px;
+        }
+
+        form {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 5 5px;
+        }
+		
+		video {
+            width: 100%; /* Video će popuniti širinu roditeljskog elementa */
+            max-width: 800px; /* Postavite maksimalnu širinu videa po potrebi */
+            height: auto; /* Održava omjer širine i visine */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="banner">
+       
+            <h1>Nikola Tesla</h1>
+            <p>Izumitelj modernog doba</p>
+        </div>
+        <nav>
+            <a href="#pocetna" onclick="prikaziSekciju('pocetna')">Početna stranica</a>
+            <a href="#novosti" onclick="prikaziSekciju('novosti')">Novosti</a>
+            <a href="#kontakt" onclick="prikaziSekciju('kontakt')">Kontakt</a>
+            <a href="#nama" onclick="prikaziSekciju('nama')">O nama</a>
+            <a href="#galerija" onclick="prikaziSekciju('galerija')">Galerija</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="pocetna" style="display: block;">
+            <h1>Po čemu ga pamtimo</h1>
+            <h2>Najbitnije točke u njegovom životu</h2>
+
+            <p>Nikola Tesla, jedan od najvećih izumitelja u povijesti, ostavio je neizbrisiv trag u području elektrotehnike i tehnologije. 
+			Rođen u selu Smiljan u Hrvatskoj 1856. godine, Tesla je svojim nevjerojatnim izumima i vizionarskim idejama promijenio svijet. 
+			U ovom članku, istražit ćemo ključne aspekte Teslinog života i rada, ističući njegove najznačajnije doprinose modernom društvu.</p>
+
+            <p>Teslina karijera započela je radom u Edisonovoj tvrtki, no uskoro je napustio tu suradnju kako bi ostvario vlastite vizije. 
+			Jedan od njegovih najranijih izuma bio je sustav izmjenične struje (AC), koji se danas koristi u svakodnevnom životu za distribuciju električne energije. 
+			Ovaj izum bio je revolucionaran jer je omogućio prijenos električne energije na velike udaljenosti s manjim gubicima. 
+			Teslina genijalnost bila je očita i u drugim izumima poput transformatora, Teslina transformatora i besplatne energije. 
+			Unatoč svojim brojnim doprinosima, Tesla je često nailazio na teškoće u priznavanju njegovog rada. 
+			Konflikti s drugim izumiteljima, posebno s Edisonom, rezultirali su time da su neki od Teslinih izuma bili zanemareni ili čak pripisivani drugima. 
+			Tesla je bio često financijski pogođen, a unatoč njegovoj genijalnosti, nije uvijek bio adekvatno nagrađivan za svoje inovacije.</p>
+
+            <p>Unatoč životnim izazovima, Tesla je ostavio dubok i trajan utjecaj na moderno društvo. 
+			Njegov rad na bežičnom prijenosu energije, rad na radiju i ranih oblicima tehnologije daljinskog upravljanja bili su ključni za razvoj suvremenih komunikacija i tehnologije. 
+			Teslino nasljeđe također živi kroz Tesla Motors, tvrtku koja je nazvana u njegovu čast i koja je pionir u proizvodnji električnih vozila. 
+			Nikola Tesla, izumitelj i vizionar, ostavio je neizbrisiv trag na svijetu. Njegovi izumi i ideje promijenili su način na koji živimo i radimo, oblikujući suvremenu tehničku krajolik. 
+			Unatoč životnim izazovima, Tesla je ostao posvećen svojoj strasti i ostvario nevjerojatne uspjehe koji će se vječno pamtiti kao ključni trenuci u povijesti tehnologije.</p>
+
+            <figure>
+                <img src="nikola_tesla.jpg" alt="Opis slike" height=400 width=150>
+                <figcaption>Slika Nikole Tesle</figcaption>
+            </figure>
+        </section>
+
+        <section id="novosti" style="display: none;">
+            <!-- Članak 1 -->
+            <article>
+					<img src="izumi.jpg" alt="Opis članka 1" width=200>
+				<h3>Najznacajniji izumi</h3>
+				<p>Procitajte vise o ovom clanku na poveznici</p>
+				<p>Datum objave: 05. siječnja 2024.</p>
+				<a href="vise_o_clanku1.html">Više o članku</a>
+			</article>
+
+            <!-- Članak 2 -->
+			<article>
+					<img src="zivot.jpg" alt="Opis članka 2" width=200>
+				<h3>Obiteljski zivot</h3>
+				<p>Procitajte vise o zivotu Nikole Tesle</p>
+				<p>Datum objave: 12. siječnja 2024.</p>
+				<a href="vise_o_clanku2.html">Više o članku</a>
+			</article>
+
+            <!-- Članak 3 -->
+            <article>
+					<img src="problemi.jpg" alt="Opis članka 1" width=200>
+				<h3>Problemi</h3>
+				<p>Saznajte s kojim problemima se susretao Nikola Tesla kroz zivot</p>
+				<p>Datum objave: 25. travanj 2023.</p>
+				<a href="vise_o_clanku3.html">Više o članku</a>
+			</article>
+
+            <!-- Članak 4 -->
+            <article>
+					<img src="tehnologija.jpg" alt="Opis članka 1" width=200>
+				<h3>Utjecaj danas</h3>
+				<p>Procitajte kakav utjecaj Nikola Tesla ima na danasnju tehnologiju </p>
+				<p>Datum objave: 08. kolovoz 2023.</p>
+				<a href="vise_o_clanku4.html">Više o članku</a>
+			</article>
+
+            <!-- Članak 5 -->
+            <article>
+					<img src="biografija.jpg" alt="Opis članka 1" width=200>
+				<h3>Biografija</h3>
+				<p>Uputite se kroz zivot kreativnog izumitelja</p>
+				<p>Datum objave: 07. studeni 2024.</p>
+				<a href="vise_o_clanku5.html">Više o članku</a>
+			</article>
+        </section>
+
+        <section id="kontakt" style="display: none;">
+            <h1>Kontaktirajte nas</h1>
+
+            <form action="obrada_forme.php" method="POST">
+                <label for="ime">Ime:</label>
+                <input type="text" id="ime" name="ime" required>
+
+                <label for="prezime">Prezime:</label>
+                <input type="text" id="prezime" name="prezime" required>
+
+                <label for="email">E-mail adresa:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="drzava">Država:</label>
+                <select id="drzava" name="drzava">
+                    <option value="hrvatska">Hrvatska</option>
+                    <option value="srbija">Srbija</option>
+                    <option value="bih">Bosna i Hercegovina</option>
+                    <!-- Dodajte druge opcije prema potrebi -->
+                </select>
+
+                <label for="opis">Opis:</label>
+                <textarea id="opis" name="opis" rows="4" required></textarea>
+
+                <input type="submit" value="Pošalji">
+				
+				<p>Posjetite nas na adresi:</p>
+				<p>Zagrebačka Ul. 5, 10410, Velika Gorica</p>
+
+				<iframe
+					width="600"
+					height="450"
+					style="border:0"
+					loading="lazy"
+					allowfullscreen
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27900.892754544265!2d16.0663!3d45.7168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4764dcad71098617%3A0x5af2a207f20b3a3d!2sVelika%20Gorica!5e0!3m2!1sen!2shr!4v1644162453816!5m2!1sen!2shr"
+				></iframe>
+
+				<form action="obrada_forme.php" method="POST">
+
+				</form>
+            </form>
+        </section>
+		
+		<section id="nama" style="display: none;">
+            <h1>O nama</h1>
+
+            <p>Dobrodošli na Stranicu posvećenu Nikola Tesli!
+
+				Naša stranica predstavlja posvetu jednom od najsvjetlijih uma u povijesti - Nikoli Tesli. 
+				Nikola Tesla, rođen 10. srpnja 1856. godine u selu Smiljan, Hrvatska, bio je izuzetan izumitelj, elektroinženjer i vizionar. 
+				Naš cilj je istražiti i predstaviti bogatstvo Teslinog naslijeđa, od njegovih revolucionarnih izuma u elektrotehnici do manje poznatih, 
+				ali jednako važnih, aspekata njegovog života, uključujući intimne detalje o njegovoj obitelji i osobnom životu.</p>
+
+            <p>Misija: Podizanje Svijesti o Teslinom Geniju i Naslijeđu
+
+				Naša misija je širenje znanja o Teslinim nevjerojatnim doprinosima modernom društvu. 
+				Tesla je bio pionir u području elektrotehnike, s izumima poput sustava izmjenične struje koji su oblikovali našu svakodnevicu. 
+				Osim što ćemo istraživati njegove tehničke inovacije, želimo vam približiti i njegovu ljudsku stranu - odnos s obitelji, strast prema 
+				znanju te vizionarski pogled na budućnost koji i dalje nadahnjuje generacije diljem svijeta.</p>
+
+            <p>Pridružite Nam Se u Otkrivanju Teslinog Naslijeđa
+
+				Ova stranica nije samo izvor informacija o Nikoli Tesli, već i mjesto gdje zajedno možemo otkrivati i raspravljati o njegovom naslijeđu. 
+				Pridružite nam se u istraživanju Teslinog života, njegovih ideja i ostavštine. 
+				Sviđa li vam se ovo nevjerojatno putovanje kroz prošlost i budućnost, zajedno ćemo razumjeti važnost Teslinog genija i njegov utjecaj na suvremenu tehnologiju. 
+				Dobrodošli na putovanje u svijet Nikole Tesle!</p>
+
+            <figure>
+				<!-- Video element -->
+				<video controls>
+					<source src="video_nikola_tesla.mp4" type="video/mp4">
+				</video>
+            </figure>
+        </section>
+		
+		<section id="galerija" style="display: none;">
+			<h1>Galerija slika</h1>
+			<div class="galerija">
+				<!-- Slike u galeriji -->
+				<figure>
+					<img src="izum_1.jpeg" alt="Opis slike 1" onclick="prikaziVecuSliku('izum_1.jpeg', 'Nikola Tesla')" width=300>
+					<figcaption>Telefon</figcaption>
+				</figure>
+
+				<figure>
+					<img src="izum_2.jpeg" alt="Opis slike 2" onclick="prikaziVecuSliku('izum_2.jpeg', 'Opis slike 2')" width=300>
+					<figcaption>Teslina zavojnica</figcaption>
+				</figure>
+				
+				<figure>
+					<img src="izum_3.jpg" alt="Opis slike 3" onclick="prikaziVecuSliku('izum_3.jpg', 'Opis slike 2')" width=300>
+					<figcaption>Teslina zavojnica</figcaption>
+				</figure>
+				
+				<figure>
+					<img src="izum_4.jpg" alt="Opis slike 4" onclick="prikaziVecuSliku('izum_4.jpg', 'Opis slike 2')" width=300>
+					<figcaption>Teslina turbina</figcaption>
+				</figure>
+				
+				<figure>
+					<img src="izum_5.jpeg" alt="Opis slike 5" onclick="prikaziVecuSliku('izum_5.jpeg', 'Opis slike 2')" width=300>
+					<figcaption>Teslin toranj</figcaption>
+				</figure>
+				
+				<figure>
+					<img src="izum_6.jpeg" alt="Opis slike 6" onclick="prikaziVecuSliku('izum_6.jpeg', 'Opis slike 2')" width=300>
+					<figcaption>Teslin elektromotor</figcaption>
+				</figure>
+				
+				<figure>
+					<img src="galerija_1.jpg" alt="Opis slike 7" onclick="prikaziVecuSliku('galerija_1.jpg', 'Opis slike 2')" width=300>
+					<figcaption>Nikola Tesla u starosti</figcaption>
+				</figure>
+				
+				<figure>
+					<img src="galerija_2.jpeg" alt="Opis slike 8" onclick="prikaziVecuSliku('galerija_2.jpeg', 'Opis slike 2')" width=300>
+					<figcaption>Memorijalni centar</figcaption>
+				</figure>
+				
+				<figure>
+					<img src="galerija_3.jpeg" alt="Opis slike 9" onclick="prikaziVecuSliku('galerija_3.jpeg', 'Opis slike 2')" width=300>
+					<figcaption>Socijalni zivot Nikole Tesle</figcaption>
+				</figure>
+				
+				<figure>
+					<img src="galerija_4.jpeg" alt="Opis slike 10" onclick="prikaziVecuSliku('galerija_4.jpeg', 'Opis slike 2')" width=300>
+					<figcaption>Prezentacija izuma</figcaption>
+				</figure>
+
+			</div>
+           
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kristijan Barisic | <a href="https://github.com/" target="_blank" title="GitHub">GitHub</a></p>
+
+        <div class="social-icons">
+            <a href="https://twitter.com/" target="_blank" title="Twitter">
+                <img src="twitter.png" alt="Twitter">
+            </a>
+			
+			<a href="https://facebook.com/" target="_blank" title="Facebook">
+                <img src="facebook.png" alt="Twitter">
+            </a>
+			
+			<a href="https://instagram.com/" target="_blank" title="Instagram">
+                <img src="instagram.png" alt="Twitter">
+            </a>
+        </div>
+		
+    </footer>
+
+    <script>
+	 function prikaziVecuSliku(slikaSrc, opis) {
+            // Otvara novi prozor s uvećanom slikom
+            var prozor = window.open('', '_blank');
+            
+            // Postavlja HTML sadržaj novog prozora
+            prozor.document.write(`
+                <html>
+                <head>
+                    <title>Uvećana slika</title>
+                    <style>
+                        body {
+                            margin: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100vh;
+                            background-color: #f0f0f0;
+                        }
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <img src="${slikaSrc}" alt="${opis}">
+                </body>
+                </html>
+            `);
+            
+            // Zatvara dokument novog prozora za pisanje
+            prozor.document.close();
+        }
+        function prikaziSekciju(sekcija) {
+            document.getElementById('pocetna').style.display = 'none';
+            document.getElementById('novosti').style.display = 'none';
+            document.getElementById('kontakt').style.display = 'none';
+			document.getElementById('nama').style.display = 'none';
+			document.getElementById('galerija').style.display = 'none';
+
+            if (sekcija === 'pocetna') {
+                document.getElementById('pocetna').style.display = 'block';
+            } else if (sekcija === 'novosti') {
+                document.getElementById('novosti').style.display = 'block';
+            } else if (sekcija === 'kontakt') {
+                document.getElementById('kontakt').style.display = 'block';
+			} else if (sekcija === 'nama') {
+                document.getElementById('nama').style.display = 'block';
+			} else if (sekcija === 'galerija') {
+                document.getElementById('galerija').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html> 
+
